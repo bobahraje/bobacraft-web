@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BobaCraft – Minecraft server pro všechny</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #7ac3ff, #305bbd);
+      color: #fff;
+      margin: 0; padding: 0;
+    }
+    header {
+      background-color: #1e40af;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    nav {
+      background: #2e59c9;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #1e3a8a;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+    .server-link {
+      display: inline-block;
+      background: #1e3a8a;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 7px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    }
+    /* Galerie */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    /* Chat */
+    #chat-container {
+      background: #1e40af;
+      padding: 15px;
+      border-radius: 10px;
+      height: 300px;
+      overflow-y: auto;
+      font-size: 0.9em;
+    }
+    #chat-input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+    /* Vtipné hlášky */
+    .quotes {
+      background: #1e40af;
+      padding: 15px;
+      border-radius: 10px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header>BobaCraft</header>
+  <nav>
+    <a href="#home">Domů</a>
+    <a href="#join">Připojit se</a>
+    <a href="#create-server">Vytvořit server</a>
+    <a href="#about">O nás</a>
+    <a href="#fans">Fanoušci</a>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Vítejte na BobaCraft!</h2>
+      <p>Hraj Minecraft s neplacenou verzí a připoj se na náš hlavní server.</p>
+      <a href="minecraft://play.bobacraft.cz" class="server-link">Připojit se na server</a>
+    </section>
+
+    <section id="join">
+      <h2>Návod, jak se připojit</h2>
+      <p>Stačí v Minecraftu zadat adresu serveru: <b>play.bobacraft.cz</b> a připojit se.</p>
+      <p>Pokud nemáš oficiální verzi, můžeš použít crack klienta a náš server podporuje i nelegální verze.</p>
+    </section>
+
+    <section id="create-server">
+      <h2>Vytvoř si vlastní server</h2>
+      <p>Vyplň tento formulář, přidej svůj server a můžeš hrát s kamarády:</p>
+      <!-- Zde vlož iframe s Google Formulářem -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8WmEYrsY6Z45zE2dVczCuqT-x2IFDWWvTgvW1dWk9vYaTMA/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
+    </section>
+
+    <section id="about">
+      <h2>O nás</h2>
+      <p>Hlavní vývojář serveru je <b>Bobapes</b> – pes, který miluje Minecraft a spravuje server sám. Spolu s ním pomáhají <b>Gustapes</b> a <b>Bububak</b>, kteří jsou skvělí kamarádi a vývojáři.</p>
+    </section>
+
+    <section id="fans">
+      <h2>Sekce pro fanoušky Bobapese a Gustapese</h2>
+      <div class="quotes">
+        <p>Bobapes: „Když chceš stavět, tak stav!“</p>
+        <p>Gustapes: „Nikdy nezapomeň, že každý blok má svůj příběh.“</p>
+      </div>
+      <h3>Galerie Bobapese, Gustapese a Bububaka</h3>
+      <div class="gallery">
+        <img src="https://i.imgur.com/4w4FhJj.png" alt="Bobapes" title="Bobapes" />
+        <img src="https://i.imgur.com/UWZ8DbP.png" alt="Gustapes" title="Gustapes" />
+        <img src="https://i.imgur.com/MPL1WXf.png" alt="Bububak" title="Bububak" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
